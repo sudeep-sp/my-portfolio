@@ -46,7 +46,7 @@ export default function About() {
             <p className="text-gray-400 py-[0.5]">Sudeep.me</p>
           </div>
         </div>
-        <div className="flex flex-col justify-center mx-10 md:mx-14">
+        <div className="flex flex-col justify-center md:mx-14">
           {/* Search Input */}
           <div className="bg-secondary px-4 py-4 flex space-x-2 rounded-xl  mt-14 mb-6 w-[85%] sm:w-[70%]">
             <span className="text-yellow-400 text-xl">✨</span>
