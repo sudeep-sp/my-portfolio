@@ -2,22 +2,32 @@ import { HiAcademicCap } from "react-icons/hi2";
 import { GoDot } from "react-icons/go";
 import { MdWork } from "react-icons/md";
 import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
 
 export default function About() {
-
-    useEffect(() => {
-      ScrollReveal().reveal(".reveal", {
-        distance: "50px", // Distance the element moves
-        duration: 800, // Animation duration (in ms)
-        easing: "ease-in-out", // Easing function
-        opacity: 0, // Start with 0 opacity
-        scale: 0.9, // Start with 90% scale
-        reset: false, // Animation replay on scroll
-        interval: 100, // Delay between animations for multiple elements
-        origin: "bottom",
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Dynamically import ScrollReveal only in the browser
+      import("scrollreveal").then((ScrollReveal) => {
+        ScrollReveal.default().reveal(".reveal", {
+          distance: "50px",
+          duration: 800,
+          easing: "ease-in-out",
+          opacity: 0,
+          scale: 0.9,
+          reset: false,
+          interval: 100,
+          origin: "bottom",
+        });
       });
-    }, []);
+    }
+  }, []);
+
+  const handleNavigation = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section
@@ -117,11 +127,12 @@ export default function About() {
             </div>
           </div>
           <div className="py-4 rounded-xl flex justify-end my-9">
-            <a href="#AIBot">
-              <button className="bg-accent py-1 px-3 rounded-xl">
-                <span className="text-yellow-400">✨</span> AI Bot
-              </button>
-            </a>
+            <button
+              onClick={() => handleNavigation("AIBot")}
+              className="bg-accent py-1 px-3 rounded-xl"
+            >
+              <span className="text-yellow-400">✨</span> AI Bot
+            </button>
           </div>
         </div>
       </div>

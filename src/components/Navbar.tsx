@@ -6,15 +6,23 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 // Define your navigation items
 const navigation = [
-  { name: "Home", href: "#Home" },
-  { name: "About Me", href: "#About" },
-  { name: "Skills", href: "#Skills" },
-  { name: "Projects", href: "#Projects" },
-  { name: "Certificates", href: "#Certificates" },
+  { name: "Home", href: "Home" },
+  { name: "About Me", href: "About" },
+  { name: "Skills", href: "Skills" },
+  { name: "Projects", href: "Projects" },
+  { name: "Certificates", href: "Certificates" },
 ];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Smooth scroll function
+  const handleNavigation = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header className="sticky top-0 inset-x-0 z-50 bg-primary px-4 md:px-20">
@@ -49,24 +57,24 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex lg:gap-x-12 space-x-8">
           {navigation.map((item) => (
-            <a
+            <button
               key={item.name}
-              href={item.href}
+              onClick={() => handleNavigation(item.href)}
               className="text-sm font-semibold text-white hover:text-indigo-600"
             >
               {item.name}
-            </a>
+            </button>
           ))}
         </div>
 
         {/* Log in Button */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="#AIBot"
+          <button
+            onClick={() => handleNavigation("AIBot")}
             className="text-sm font-semibold text-white hover:text-indigo-600"
           >
             AI Bot <span aria-hidden="true">&rarr;</span>
-          </a>
+          </button>
         </div>
       </nav>
 
@@ -100,23 +108,25 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
+                  <button
                     key={item.name}
-                    href={item.href}
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      handleNavigation(item.href);
+                      setMobileMenuOpen(false);
+                    }}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
-                  </a>
+                  </button>
                 ))}
               </div>
               <div className="py-6">
-                <a
-                  href="#AIBot"
+                <button
+                  onClick={() => handleNavigation("AIBot")}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   AI Bot
-                </a>
+                </button>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+
 
 export default function Skills() {
   const skills = [
@@ -15,18 +15,23 @@ export default function Skills() {
     { name: "OpenCV", img: "skills/pytorch.png" },
   ];
 
-      useEffect(() => {
-        ScrollReveal().reveal(".reveal", {
-          distance: "50px", // Distance the element moves
-          duration: 800, // Animation duration (in ms)
-          easing: "ease-in-out", // Easing function
-          opacity: 0, // Start with 0 opacity
-          scale: 0.9, // Start with 90% scale
-          reset: false, // Animation replay on scroll
-          interval: 100, // Delay between animations for multiple elements
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Dynamically import ScrollReveal only in the browser
+      import("scrollreveal").then((ScrollReveal) => {
+        ScrollReveal.default().reveal(".reveal", {
+          distance: "50px",
+          duration: 800,
+          easing: "ease-in-out",
+          opacity: 0,
+          scale: 0.9,
+          reset: false,
+          interval: 100,
           origin: "bottom",
         });
-      }, []);
+      });
+    }
+  }, []);
 
   return (
     <section
