@@ -7,10 +7,6 @@ import Certificates from "@/components/Certificates";
 import Footer from "@/components/Footer";
 import Bot from "@/components/Bot";
 import Navbar from "@/components/Navbar";
-import Education from "@/components/Education";
-import { useEffect } from "react";
-import AOS from "aos";
-
 export default function Home() {
  
 
@@ -19,7 +15,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      {/* <Education /> */}
       <Skills />
       <Projects />
       <Certificates />

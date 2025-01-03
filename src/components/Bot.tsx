@@ -34,6 +34,7 @@ export default function Bot() {
       const data = await res.json();
       setResponse(data.response); // Update the response
     } catch (error) {
+      console.error("Error fetching the response:", error); // Add this line
       setResponse("An error occurred while fetching the response.");
     } finally {
       setLoading(false);
