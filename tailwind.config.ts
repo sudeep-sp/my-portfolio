@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#0F172A", // Dark background color
+        secondary: "#0b1527", // Lighter card background
+        accent: "#7C3AED",   // Accent color
+        textLight: "#CBD5E1", // Light text color
+        dark: "#030c1c", // Background for the entire card
+        darkAccent: "#1E293B", // Accent for top bar and border
       },
     },
   },
