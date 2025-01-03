@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Text Section */}
       <div className="flex-1 reveal mt-20 md:mt-0">
         <h1 className="text-4xl font-bold mb-4">
-          Hello, I'm <br />
+          Hello, I&#39;m <br />
           <span className="text-accent">Sudeep S Patil</span>
         </h1>
         <p className="text-lg text-gray-400 mb-8">
