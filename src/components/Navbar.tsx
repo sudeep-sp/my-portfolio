@@ -11,6 +11,7 @@ const navigation = [
   { name: "Skills", href: "Skills" },
   { name: "Projects", href: "Projects" },
   { name: "Certificates", href: "Certificates" },
+  { name: "AI Bot", href: "AIBot" },
 ];
 
 export default function Navbar() {
@@ -70,10 +71,12 @@ export default function Navbar() {
         {/* Log in Button */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button
-            onClick={() => handleNavigation("AIBot")}
+            onClick={() => {
+              window.location.href = "https://learnaiwithus.codes";
+            }}
             className="text-sm font-semibold text-white hover:text-indigo-600"
           >
-            AI Bot <span aria-hidden="true">&rarr;</span>
+            Blogs <span aria-hidden="true">&rarr;</span>
           </button>
         </div>
       </nav>
@@ -85,7 +88,7 @@ export default function Navbar() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-primary px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Brand</span>
@@ -98,7 +101,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-white"
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="h-6 w-6" />
@@ -114,7 +117,7 @@ export default function Navbar() {
                       handleNavigation(item.href);
                       setMobileMenuOpen(false);
                     }}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-accent"
                   >
                     {item.name}
                   </button>
@@ -122,10 +125,14 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <button
-                  onClick={() => handleNavigation("AIBot")}
+                  // onClick={() => handleNavigation("AIBot")}
+                  onClick={() => {
+                    window.location.href = "https://learnaiwithus.codes";
+                    setMobileMenuOpen(false);
+                  }}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  AI Bot
+                  Blogs
                 </button>
               </div>
             </div>
