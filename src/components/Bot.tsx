@@ -68,7 +68,7 @@ export default function Bot() {
 
   return (
     <section className="bg-primary text-white px-10 md:px-32" id="AIBot">
-      <div className="max-w-4xl mb-10">
+      <div className="max-w-4xl mb-4 md:mb-10">
         <h2 className="text-3xl font-bold reveal">AI Bot</h2>
       </div>
 
@@ -112,7 +112,7 @@ export default function Bot() {
         <div className="w-[70%] mx-auto md:max-w-[60%] reveal">
           <img
             className="w-full mb-10 md:mb-0"
-            src="my_bot1.png"
+            src="/my_bot1.png"
             alt="Bot Illustration"
           />
         </div>
