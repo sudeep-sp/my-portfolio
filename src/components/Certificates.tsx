@@ -4,23 +4,27 @@ import { useEffect } from "react";
 
 const items = [
   {
-    imageUrl: "certificate.jpg",
+    imageUrl: "/certificates/tensorflow.jpg",
     link: "https://example.com/1",
   },
   {
-    imageUrl: "certificate.jpg",
+    imageUrl: "/certificates/meta.jpg",
     link: "https://example.com/2",
   },
   {
-    imageUrl: "certificate.jpg",
+    imageUrl: "/certificates/project_mag.jpg",
+    link: "https://example.com/5",
+  },
+  {
+    imageUrl: "/certificates/paper.jpg",
     link: "https://example.com/3",
   },
   {
-    imageUrl: "certificate.jpg",
+    imageUrl: "/certificates/big_data.jpg",
     link: "https://example.com/4",
   },
   {
-    imageUrl: "certificate.jpg",
+    imageUrl: "/certificates/digitalmarketing.jpg",
     link: "https://example.com/5",
   },
 ];

@@ -29,17 +29,15 @@ export default function Navbar() {
     <header className="sticky top-0 inset-x-0 z-50 bg-primary px-4 md:px-20">
       <nav
         aria-label="Global"
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between py-3 lg:px-8"
       >
         {/* Logo */}
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Brand</span>
-            <img
-              alt=""
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            />
+            <h1 className="font-extrabold text-lg md:text-2xl text-white bg-accent rounded-full p-2 hover:text-accent hover:bg-white ease-in-out transition-all duration-300">
+              SP
+            </h1>
           </a>
         </div>
 
@@ -61,20 +59,20 @@ export default function Navbar() {
             <button
               key={item.name}
               onClick={() => handleNavigation(item.href)}
-              className="text-sm font-semibold text-white hover:text-indigo-600"
+              className="text-sm font-semibold text-white hover:text-accent"
             >
               {item.name}
             </button>
           ))}
         </div>
 
-        {/* Log in Button */}
+        {/* blog in Button */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button
             onClick={() => {
               window.location.href = "https://learnaiwithus.codes";
             }}
-            className="text-sm font-semibold text-white hover:text-indigo-600"
+            className="text-sm font-semibold text-white hover:"
           >
             Blogs <span aria-hidden="true">&rarr;</span>
           </button>
@@ -92,18 +90,15 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Brand</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              <h1 className="font-extrabold text-lg text-white bg-accent rounded-full p-2 hover:text-accent hover:bg-white ease-in-out transition-all duration-300">
+                SP
+              </h1>
             </a>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
               className="-m-2.5 rounded-md p-2.5 text-white"
             >
-              <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>

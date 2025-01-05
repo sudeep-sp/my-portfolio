@@ -64,10 +64,10 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex justify-between mx-6 mt-10 flex-col space-y-10 md:space-x-0 md:flex-row">
+          <div className="flex justify-between mx-6 mt-10 flex-col space-y-10 md:space-y-0 md:flex-row">
             <div>
               <div>
-                <HiAcademicCap className="text-accent text-[4rem]" />
+                <HiAcademicCap className="text-accent text-[3rem]" />
                 <h2 className="text-white text-3xl mt-2 font-bold">
                   Education
                 </h2>
@@ -75,13 +75,13 @@ export default function About() {
 
               <div className="my-5 space-y-5">
                 <div className="flex space-x-4">
-                  <GoDot className=" text-3xl" />
+                  <GoDot className=" text-2xl" />
                   <div className="space-y-3">
-                    <p className="text-xl text-gray-400">2024 - Present</p>
-                    <p className="text-xl text-gray-400">
+                    <p className="text-md text-gray-400">2024 - Present</p>
+                    <p className="text-md text-gray-400">
                       Brandenburg University of Technology
                     </p>
-                    <p className="text-xl text-gray-400">
+                    <p className="text-md text-gray-400">
                       Masters in Artificial Intelligence
                     </p>
                   </div>
@@ -89,14 +89,14 @@ export default function About() {
                 <div className="flex space-x-4">
                   <GoDot className=" text-3xl" />
                   <div className="space-y-3">
-                    <p className="text-xl text-gray-400">2019 - 2023</p>
-                    <p className="text-xl text-gray-400">
+                    <p className="text-md text-gray-400">2019 - 2023</p>
+                    <p className="text-md text-gray-400">
                       Prodhadeveraya Institute of Technology
                     </p>
-                    <p className="text-xl text-gray-400">
+                    <p className="text-md text-gray-400">
                       Bachelor in Computer Science & Engineering
                     </p>
-                    <p className="text-xl text-gray-400">8.7 CGPA</p>
+                    <p className="text-md text-gray-400">8.7 CGPA</p>
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function About() {
 
             <div>
               <div>
-                <MdWork className=" text-[4rem] text-accent" />
+                <MdWork className=" text-[3rem] text-accent" />
                 <h2 className="text-white text-3xl mt-2 font-bold">
                   Experience
                 </h2>
@@ -112,15 +112,13 @@ export default function About() {
 
               <div className="my-5 space-y-5">
                 <div className="flex space-x-4">
-                  <GoDot className=" text-3xl" />
+                  <GoDot className=" text-2xl" />
                   <div className="space-y-3">
-                    <p className="text-xl text-gray-400">
-                      Sept 2022 - Nov 2022
+                    <p className="text-md text-gray-400">
+                      Aug to Oct 2022 & Jan to Mar 2023
                     </p>
-                    <p className="text-xl text-gray-400">Contravir</p>
-                    <p className="text-xl text-gray-400">
-                      Machine Learning Internship
-                    </p>
+                    <p className="text-md text-gray-400">Contravir</p>
+                    <p className="text-md text-gray-400">Data Analyst Intern</p>
                   </div>
                 </div>
               </div>
