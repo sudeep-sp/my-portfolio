@@ -112,7 +112,7 @@ export default function Bot() {
         <div className="w-[70%] mx-auto md:max-w-[60%] reveal">
           <img
             className="w-full mb-10 md:mb-0"
-            src="/my_bot1.png"
+            src="/my_bot1.PNG"
             alt="Bot Illustration"
           />
         </div>
