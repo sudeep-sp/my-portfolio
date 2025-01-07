@@ -55,12 +55,13 @@ export default function About() {
           {/* Content Area */}
           <div className="bg-secondary px-6 py-6 rounded-xl">
             <div className="text-gray-300 leading-relaxed">
-              I am currently pursuing an MS in AI at BTU Cottbus, Germany. My
-              expertise lies in core machine learning, neural networks, and
-              generative AI. I have hands-on experience with frameworks like
-              PyTorch and tools like langchain, crewai. I’m passionate about
-              creating AI-driven applications and exploring the latest trends in
-              technology.
+              Artificial Intelligence Master’s student with hands-on experience
+              in AI/ML development, including large language models and computer
+              vision applications. Proficient in end-to-end project development,
+              from research to implementation, with a strong foundation in
+              Mathamatics, Machine learning, and Data Science. Skilled in
+              teamwork and independent problem-solving. Excited to apply my
+              expertise and contribute to innovative AI solutions.
             </div>
           </div>
 
