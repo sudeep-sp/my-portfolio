@@ -9,49 +9,30 @@ import { useEffect } from "react";
 const thumbnails = [
   {
     id: 1,
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "ESI-SBA",
+    imageUrl: "/projects/FL1.png",
+    title: "Training CNN using Federated Learning",
     description:
-      "A comprehensive school management system that streamlines administrative tasks, student enrollment, and academic tracking.",
+      "A web application that demonstrates the training of a Convolutional Neural Network in Decentralized manner to increase privacy.",
     active: true,
-    skills: ["Next.js", "TailwindCSS", "TypeScript", "Firebase", "REST API"],
+    skills: ["Python", "PyTorch", "Flower", "streamlit"],
   },
   {
     id: 2,
-    imageUrl:
-      "https://images.unsplash.com/photo-1543941869-11da6518d88f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Talent Showcase",
+    imageUrl: "/projects/blog_gen.png",
+    title: "Agentic Blog Generator",
     description:
-      "An online platform for showcasing and discovering talents across various domains such as art, music, and technology.",
+      "Automated blog creation for our blogging website, saving up to 90% of a writer's time by generating fully structured blogs using a multi-agent system (Researcher, Strategist, Writer, SEO Optimizer) in seconds.",
     active: false,
-    skills: ["React", "TailwindCSS", "GraphQL", "Node.js", "MongoDB"],
+    skills: ["CrewAI", "Next.js", "Python", "Supabase", "LangChain"],
   },
   {
     id: 3,
-    imageUrl:
-      "https://images.unsplash.com/photo-1558137623-ce933996c730?q=80&w=2906&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Translation App",
+    imageUrl: "/projects/Ask_AI.png",
+    title: "Ask-AI: Real-time Explanation Tool",
     description:
-      "A mobile application that provides real-time voice translation, enhancing communication across different languages.",
+      "Developed a feature for our blogging website, enabling users to select unfamiliar words in blogs and instantly receive explanations using RAG-based LLMs.",
     active: false,
-    skills: [
-      "React Native",
-      "TypeScript",
-      "OpenAI Whisper",
-      "Firebase",
-      "Docker",
-    ],
-  },
-  {
-    id: 4,
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1676637656166-cb7b3a43b81a?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "AI Assistant",
-    description:
-      "A personal assistant application leveraging AI for personalized task management, reminders, and information retrieval.",
-    active: false,
-    skills: ["Next.js", "TailwindCSS", "TypeScript", "TensorFlow", "Docker"],
+    skills: ["Python", "LangChain", "Ollama", "Next.js", "ChromaDB"],
   },
 ];
 
