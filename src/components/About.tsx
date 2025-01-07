@@ -31,7 +31,7 @@ export default function About() {
 
   return (
     <section
-      className="bg-primary text-white md:px-32 pb-20 flex justify-center items-center mt-28 md:mt-0 reveal"
+      className="bg-primary text-white md:px-32 pb-20 flex justify-center items-center mt-28 md:mt-0 reveal pt-20"
       id="About"
     >
       <div className="text-white w-[90%] rounded-xl shadow-lg  p-4 bg-dark">

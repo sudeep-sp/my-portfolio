@@ -7,6 +7,16 @@ export default function Bot() {
   const [response, setResponse] = useState(""); // For API response
   const [loading, setLoading] = useState(false); // Loading state
   const [showMsg, setShowMsg] = useState(false); // Show message state
+  const [prompts, setPrompts] = useState([
+    {
+      title: "What are the strengths of Sudeep?",
+      description: "Show me the strengths of Sudeep",
+    },
+    {
+      title: "What are the achievements of Sudeep?",
+      description: "Show me the achievements of Sudeep",
+    },
+  ]);
 
   const handleQuerySubmit = async () => {
     if (!query.trim()) return;
@@ -92,6 +102,31 @@ export default function Bot() {
                 className="text-xl text-gray-500 cursor-pointer"
                 onClick={handleClearChat}
               />
+            )}
+          </div>
+
+          <div className="flex ">
+            {!showMsg && (
+              <>
+                {prompts.map((prompt, index) => (
+                  <div
+                    key={index}
+                    onClick={() => {
+                      handleQuerySubmit();
+                      setQuery(prompt.title);
+                    }}
+                    className=" px-6 py-4 rounded-lg mr-2 mb-2 border border-gray-600 space-y-1 cursor-pointer"
+                  >
+                    <p className="font-bold text-lg text-gray-200">
+                      {prompt.title}
+                    </p>
+                    <p className="font-medium text-md text-gray-400">
+                      {prompt.description}
+                    </p>
+                    <p></p>
+                  </div>
+                ))}
+              </>
             )}
           </div>
 

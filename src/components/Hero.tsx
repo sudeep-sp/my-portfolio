@@ -74,11 +74,11 @@ export default function Hero() {
           <div className="flex flex-row space-x-4">
             {/* Download Resume Button */}
             <a
-              href="/resume.pdf" // Replace with your actual resume file path
+              href="/sudeep_resume.pdf" // Replace with your actual resume file path
               download
               className="bg-accent text-white text-center py-2 px-4 rounded-lg shadow hover:bg-opacity-90 transition"
             >
-              Resume
+              My Resume
             </a>
 
             {/* Blog Site Button */}

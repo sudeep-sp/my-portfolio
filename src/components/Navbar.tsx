@@ -26,16 +26,15 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 inset-x-0 z-50 bg-primary px-4 md:px-20">
+    <header className="sticky top-0 inset-x-0 z-50 bg-primary py-2 px-4 md:px-20 ">
       <nav
         aria-label="Global"
         className="flex items-center justify-between py-3 lg:px-8"
       >
         {/* Logo */}
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Brand</span>
-            <h1 className="font-extrabold text-lg md:text-2xl text-white bg-accent rounded-full p-2 hover:text-accent hover:bg-white ease-in-out transition-all duration-300">
+          <a className="-m-1.5 p-1.5" onClick={() => handleNavigation("Home")}>
+            <h1 className="font-extrabold text-lg md:text-2xl text-white hover:text-accent ease-in-out transition-all duration-300">
               SP
             </h1>
           </a>
@@ -90,7 +89,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Brand</span>
-              <h1 className="font-extrabold text-lg text-white bg-accent rounded-full p-2 hover:text-accent hover:bg-white ease-in-out transition-all duration-300">
+              <h1 className="font-extrabold text-lg text-white rounded-full hover:text-accent  ease-in-out transition-all duration-300">
                 SP
               </h1>
             </a>

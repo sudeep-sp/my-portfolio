@@ -34,7 +34,7 @@ export default function Skills() {
 
   return (
     <section
-      className="bg-primary text-white px-8 sm:px-16 md:px-32 pb-14"
+      className="bg-primary text-white px-8 sm:px-16 md:px-32 pb-14 pt-20"
       id="Skills"
     >
       <div className="max-w-4xl">
