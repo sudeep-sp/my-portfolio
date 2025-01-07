@@ -9,7 +9,7 @@ export default function Skills() {
     { name: "FastAPI", img: "skills/fastapi.png" },
     { name: "Pandas", img: "skills/pandas.png" },
     { name: "Matplotlib", img: "skills/Matplotlib.png" },
-    { name: "LangChain", img: "skills/LangChain.png" },
+    { name: "Open CV", img: "skills/opencv.png" },
     { name: "SciKit-Learn", img: "skills/sklearn.png" },
     { name: "Next.js", img: "skills/nextjs.png" },
   ];
