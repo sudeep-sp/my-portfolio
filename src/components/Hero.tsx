@@ -33,8 +33,8 @@ export default function Hero() {
   "_id": "127.0.0.1",
   "name": "Sudeep S Patil",
   "developer": true,
-  "technologies": ["Python", "PyTorch", "LLM", "..."],
-  "interests": ["AI", "GenAI", "Data Science", "..."],
+  "technologies": ["Python", "PyTorch", "CV", "..."],
+  "interests": ["GenAI", "Computer vision", "Data Science", "..."],
 }`;
 
   return (
