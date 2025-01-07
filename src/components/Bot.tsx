@@ -105,7 +105,7 @@ export default function Bot() {
             )}
           </div>
 
-          <div className="flex ">
+          <div className="flex flex-col md:flex-row">
             {!showMsg && (
               <>
                 {prompts.map((prompt, index) => (

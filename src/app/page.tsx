@@ -7,19 +7,23 @@ import Certificates from "@/components/Certificates";
 import Footer from "@/components/Footer";
 import Bot from "@/components/Bot";
 import Navbar from "@/components/Navbar";
+import StickyContactBtn from "@/components/StickyContackBtn";
 export default function Home() {
  
 
   return (
-    <div className="bg-primary">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Certificates />
-      <Bot />
-      <Footer />
-    </div>
+    <>
+      <div className="bg-primary relative">
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Certificates />
+        <Bot />
+        <Footer />
+        <StickyContactBtn />
+      </div>
+    </>
   );
 }
