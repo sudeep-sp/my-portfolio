@@ -7,7 +7,7 @@ export default function Bot() {
   const [response, setResponse] = useState(""); // For API response
   const [loading, setLoading] = useState(false); // Loading state
   const [showMsg, setShowMsg] = useState(false); // Show message state
-  const [prompts, setPrompts] = useState([
+  const prompts = [
     {
       title: "What are the strengths of Sudeep?",
       description: "Show me the strengths of Sudeep",
@@ -16,7 +16,7 @@ export default function Bot() {
       title: "What are the achievements of Sudeep?",
       description: "Show me the achievements of Sudeep",
     },
-  ]);
+  ];
 
   const handleQuerySubmit = async () => {
     if (!query.trim()) return;
