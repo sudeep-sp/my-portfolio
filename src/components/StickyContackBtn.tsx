@@ -1,13 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaGithub,
-  FaGlobe,
-} from "react-icons/fa";
-
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 export default function StickyContactBtn() {
   const [isOpen, setIsOpen] = useState(false);
   const trayRef = useRef(null);
@@ -29,7 +23,7 @@ export default function StickyContactBtn() {
       {/* Tray */}
       <div
         ref={trayRef}
-        className={`fixed left-14 md:left-16 bottom-[5%] md:bottom-[8%] bg-white shadow-lg rounded-lg overflow-hidden transform -rotate-90 origin-left transition-transform duration-300 ${
+        className={`fixed left-14 md:left-16 bottom-[9.5%] md:bottom-[11.5%] bg-white shadow-lg rounded-lg overflow-hidden transform -rotate-90 origin-left transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-[150%]"
         }`}
       >
@@ -37,27 +31,18 @@ export default function StickyContactBtn() {
         <ul className="flex flex-row items-center p-1 space-x-1">
           <li>
             <a
-              href="https://facebook.com"
+              href="mailto: sudeep.subhashchandra.patil@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-7 h-7 bg-primary text-white rounded-md shadow-md hover:bg-accent"
             >
-              <FaFacebookF size={18} className="transform rotate-90" />
+              <SiGmail size={18} className="transform rotate-90" />
             </a>
           </li>
+
           <li>
             <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-7 h-7 bg-primary text-white rounded-md shadow-md hover:bg-accent"
-            >
-              <FaTwitter size={18} className="transform rotate-90" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sudeepspatil/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-7 h-7 bg-primary text-white rounded-md shadow-md hover:bg-accent"
@@ -67,22 +52,12 @@ export default function StickyContactBtn() {
           </li>
           <li>
             <a
-              href="https://github.com"
+              href="https://github.com/sudeep-sp"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-7 h-7 bg-primary text-white rounded-md shadow-md hover:bg-accent"
             >
               <FaGithub size={18} className="transform rotate-90" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://your-website.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-7 h-7 bg-primary text-white rounded-md shadow-md hover:bg-accent"
-            >
-              <FaGlobe size={18} className="transform rotate-90" />
             </a>
           </li>
         </ul>

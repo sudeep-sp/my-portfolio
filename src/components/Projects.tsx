@@ -11,7 +11,7 @@ const thumbnails = [
     id: 1,
     imageUrl: "/projects/FL1.png",
     title: "Training CNN using Federated Learning",
-    github: "",
+    github: "https://github.com/sudeep-sp/FL_sim",
     description:
       "A web application that demonstrates the training of a Convolutional Neural Network in Decentralized manner to increase privacy.",
     active: true,
@@ -21,21 +21,21 @@ const thumbnails = [
     id: 2,
     imageUrl: "/projects/blog_gen.png",
     title: "Agentic Blog Generator",
-    github: "",
+    github: "https://github.com/sudeep-sp/learnaiwithus-blog_gen_agents",
     description:
       "Automated blog creation for our blogging website, saving up to 90% of a writer's time by generating fully structured blogs using a multi-agent system (Researcher, Strategist, Writer, SEO Optimizer) in seconds.",
     active: false,
-    skills: ["CrewAI", "Next.js", "Python", "Supabase", "LangChain"],
+    skills: ["CrewAI", "Next.js", "Python", "Supabase", "LangChain", "FastAPI"],
   },
   {
     id: 3,
     imageUrl: "/projects/Ask_AI.png",
     title: "Ask-AI: Real-time Explanation Tool",
-    github: "",
+    github: "https://github.com/sudeep-sp/learnaiwithus-Ask_AI_RAG",
     description:
       "Developed a feature for our blogging website, enabling users to select unfamiliar words in blogs and instantly receive explanations using RAG-based LLMs.",
     active: false,
-    skills: ["Python", "LangChain", "Ollama", "Next.js", "ChromaDB"],
+    skills: ["Python", "LangChain", "Ollama", "Next.js", "ChromaDB", "FastAPI"],
   },
 ];
 

@@ -76,7 +76,7 @@ export default function Hero() {
             <a
               href="/sudeep_resume.pdf" // Replace with your actual resume file path
               download
-              className="bg-accent text-white text-center py-2 px-4 rounded-lg shadow hover:bg-opacity-90 transition"
+              className="inline-flex items-center text-sm px-4 py-2 bg-accent transition-all text-white font-semibold rounded-lg shadow-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
             >
               My Resume
             </a>
@@ -86,7 +86,7 @@ export default function Hero() {
               href="https://learnaiwithus.codes" // Replace with your actual blog URL
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-accent text-white text-center py-2 px-4 rounded-lg shadow hover:bg-opacity-90 transition"
+              className="inline-flex items-center text-sm px-4 py-2 bg-accent transition-all text-white font-semibold rounded-lg shadow-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
             >
               Blogs
             </a>
@@ -94,9 +94,9 @@ export default function Hero() {
           <div>
             <button
               onClick={() => handleNavigation("AIBot")}
-              className="bg-accent py-1 px-3 rounded-xl"
+              className="inline-flex items-center text-sm px-4 py-2 bg-accent transition-all text-white font-semibold rounded-lg shadow-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
             >
-              <span className="text-yellow-400">✨</span> AI Bot
+              <span className="text-yellow-400 text-xl">✨</span> AI Bot
             </button>
           </div>
         </div>

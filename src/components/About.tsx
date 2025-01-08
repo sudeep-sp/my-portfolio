@@ -128,7 +128,7 @@ export default function About() {
           <div className="py-4 rounded-xl flex justify-end my-9">
             <button
               onClick={() => handleNavigation("AIBot")}
-              className="bg-accent py-1 px-3 rounded-xl"
+              className="inline-flex items-center text-sm px-4 py-2 bg-accent transition-all text-white font-semibold rounded-lg shadow-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
             >
               <span className="text-yellow-400">✨</span> AI Bot
             </button>
