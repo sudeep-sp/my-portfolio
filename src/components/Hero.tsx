@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="absolute w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[380px] md:h-[380px] bg-gradient-to-r from-accent via-accent to-accent rounded-full blur-lg animate-pulse"></div>
         {/* Profile Image */}
         <img
-          src="/me(1).jpg"
+          src="/me.jpg"
           alt="Profile"
           className="relative w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[350px] md:h-[350px]  object-cover rounded-full shadow-lg border-4 border-white"
         />

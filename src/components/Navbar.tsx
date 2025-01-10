@@ -26,7 +26,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 inset-x-0 z-50 bg-primary py-2 px-4 md:px-20 ">
+    <header className="sticky top-0 inset-x-0 z-50 bg-primary py-2 px-7 md:px-20 ">
       <nav
         aria-label="Global"
         className="flex items-center justify-between py-3 lg:px-8"
