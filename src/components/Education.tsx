@@ -33,7 +33,7 @@ const Education = () => {
               <div className="space-y-3">
                 <p className="text-xl text-gray-400">2019 - 2023</p>
                 <p className="text-xl text-gray-400">
-                  Prodhadeveraya Institute of Technology
+                  Prodhadeveraya Institute of Technology(VTU)
                 </p>
                 <p className="text-xl text-gray-400">
                   Bachelor in Computer Science & Engineering
