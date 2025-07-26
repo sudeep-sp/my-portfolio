@@ -115,11 +115,11 @@ export default function About() {
                 <div className="flex space-x-4">
                   <GoDot className=" text-2xl" />
                   <div className="space-y-3">
+                    <p className="text-md text-gray-400">Feb 2025 - Present</p>
+                    <p className="text-md text-gray-400">IAV</p>
                     <p className="text-md text-gray-400">
-                      Aug to Oct 2022 & Jan to Mar 2023
+                      Working Student (GENAI)
                     </p>
-                    <p className="text-md text-gray-400">Contravir</p>
-                    <p className="text-md text-gray-400">Data Analyst Intern</p>
                   </div>
                 </div>
               </div>
