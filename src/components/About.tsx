@@ -118,7 +118,7 @@ export default function About() {
                     <p className="text-md text-gray-400">Feb 2025 - Present</p>
                     <p className="text-md text-gray-400">IAV</p>
                     <p className="text-md text-gray-400">
-                      Working Student (GENAI)
+                      Working Student (GenAI)
                     </p>
                   </div>
                 </div>
